@@ -1,8 +1,16 @@
 // Write your Character component here
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const kf = keyframes`
+  100% {
+    opacity: 1;
+  }
+`
 
 const StyledCharac = styled.div`
+    opacity: 0;
+    animation: ${kf} 1s forwards;
     color: ${pr => pr.theme.yellow};
     background-color: ${pr => pr.theme.black};
     border: 10px solid ${pr => pr.theme.yellow};
