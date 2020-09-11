@@ -16,8 +16,7 @@ useEffect(() => {
   axios.get(`${BASE_URL}`)
     .then(res => {
       console.log(res)
-      setPeople(res.data)
-      console.log(people)
+      setPeople(res.data.results)
     })
     .catch(err => {
       console.log(err)
