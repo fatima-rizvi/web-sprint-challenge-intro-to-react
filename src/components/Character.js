@@ -3,11 +3,12 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 
 const StyledCharac = styled.div`
-    color: "yellow";
-    background-color: "white";
-    border: 10px solid "yellow";
+    color: ${pr => pr.theme.yellow};
+    background-color: ${pr => pr.theme.black};
+    border: 10px solid ${pr => pr.theme.yellow};
+    transform: scale(0.8);
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1);
     }
 `
 
@@ -17,7 +18,7 @@ export default function Character( props ) {
 
     return (
         <StyledCharac className = 'character'>
-            <h3>{chFacts.name}</h3>
+            <h2>{chFacts.name}</h2>
             <div className = 'ch-attrs'>
                 <p>Gender: {chFacts.gender}</p>
                 <p>Birth Year: {chFacts.birth_year}</p>

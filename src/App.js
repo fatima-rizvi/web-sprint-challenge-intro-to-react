@@ -5,6 +5,11 @@ import Character from './components/Character'
 import './App.css';
 const BASE_URL = 'https://swapi.dev/api/people/'
 
+const StyledHeader = styled.h1`
+  background-color: ${pr => pr.theme.electricBlue};
+  padding: ${pr => pr.theme.smallPadding};
+`
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -26,7 +31,7 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <StyledHeader className="Header">Star Wars Characters</StyledHeader>
       {
         // If the initial value of `friends` state weren't an empty array,
         // this would crash due to invoking `map` method on non-array.
