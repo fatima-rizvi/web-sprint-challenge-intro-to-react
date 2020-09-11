@@ -22,7 +22,6 @@ const StyledCharac = styled.div`
 
 export default function Character( props ) {
     const { chFacts } = props
-    console.log(chFacts)
 
     return (
         <StyledCharac className = 'character'>

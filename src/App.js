@@ -20,7 +20,6 @@ const App = () => {
 useEffect(() => {
   axios.get(`${BASE_URL}`)
     .then(res => {
-      console.log(res)
       setPeople(res.data.results)
     })
     .catch(err => {
