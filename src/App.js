@@ -33,9 +33,6 @@ useEffect(() => {
     <div className="App">
       <StyledHeader className="Header">Star Wars Characters</StyledHeader>
       {
-        // If the initial value of `friends` state weren't an empty array,
-        // this would crash due to invoking `map` method on non-array.
-        // We'd need a guard against this.
         people.map(charac => {
           return <Character chFacts = {charac} />
         })

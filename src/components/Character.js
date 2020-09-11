@@ -12,11 +12,11 @@ const StyledCharac = styled.div`
     opacity: 0;
     animation: ${kf} 1s forwards;
     color: ${pr => pr.theme.yellow};
+    transform: scale(0.8);
     background-color: ${pr => pr.theme.black};
     border: 10px solid ${pr => pr.theme.yellow};
-    transform: scale(0.8);
     &:hover {
-        transform: scale(1);
+        transform: scale(0.99);
     }
 `
 
