@@ -15,7 +15,9 @@ const StyledCharac = styled.div`
     transform: scale(0.8);
     background-color: ${pr => pr.theme.black};
     border: 10px solid ${pr => pr.theme.yellow};
+    transition: all 0.3s ease-in-out;
     &:hover {
+        transition: all 0.3s ease-in-out;
         transform: scale(0.99);
     }
 `
